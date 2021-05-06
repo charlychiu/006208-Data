@@ -5,7 +5,8 @@ on:
   - cron: "0 8 * * *"
 
   push:
-  - master
+    branches:
+      - master
   
 jobs:
   build:
@@ -30,4 +31,4 @@ jobs:
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
+        branch: master
