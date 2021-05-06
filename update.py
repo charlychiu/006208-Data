@@ -6,7 +6,8 @@ from datetime import datetime
 
 my_headers = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Safari/605.1.15'}
-filename = datetime.today().strftime('%Y%m01')
+# filename = datetime.today().strftime('%Y%m01')
+filename = '20210401'
 y = datetime.today().strftime('%Y')
 if not os.path.exists('history/' + str(y)):
     os.makedirs('history/' + str(y))
